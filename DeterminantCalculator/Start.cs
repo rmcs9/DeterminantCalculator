@@ -51,5 +51,8 @@ public class Start
         
         Console.WriteLine("Matrix successfuly loaded:");
         matrix.matrixPrint();
+
+        int matrixDeterminant = DeterminantMethods.determinantCalc(matrix);
+        Console.WriteLine("Matrix determinant = " + matrixDeterminant);
     }
 }
