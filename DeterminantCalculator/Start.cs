@@ -10,7 +10,7 @@ public class Start
         Console.WriteLine("Example: 21,42,0,5,6");
         Console.WriteLine("On the Line below please enter the integers contained in row 1 of the matrix to begin!");
 
-        string[] line = Console.ReadLine().Split(',');
+        string[] lines = Console.ReadLine().Split(',');
         Console.WriteLine("");
         int size = line.Length;
 
