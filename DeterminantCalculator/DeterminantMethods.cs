@@ -13,8 +13,9 @@ public class DeterminantMethods
             int sum = 0;
             //calls zeroPriority to find if there is a row or column with more zeros present then the rest
             int[] zero_results = zeroPriority(matrix);
+            //zero lane is a column
             if (zero_results[0] == 1)
-            {//zero lane is a column
+            {
                 //for loop moves through the zero column along each index
                 for (int i = 0; i < matrix.getSize(); i++)
                 {
@@ -50,8 +51,9 @@ public class DeterminantMethods
                 }
                 return sum;
             }
+            //zero lane is a row
             else
-            {//zero lane is a row
+            {
                 for (int i = 0; i < matrix.getSize(); i++)
                 {
                     //any index in the zero row that is zero can be skipped as it will ultimately evaluate to zero

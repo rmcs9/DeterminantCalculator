@@ -59,8 +59,7 @@ public class Matrix
 
                 if (value >= 1000)
                 {
-                    Console.WriteLine(
-                        "four digit numbers are not supported by this program. please enter a new number:");
+                    Console.WriteLine("four digit numbers are not supported by this program. please enter a new number:");
                     if (!int.TryParse(Console.ReadLine(), out value))
                     {
                         Console.WriteLine("entry is not a valid number, please enter a valid number into console:");
